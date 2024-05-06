@@ -13,30 +13,40 @@ sudo pacman -Syu
 
 v4l2loopback requires development tools for compiling the kernel module. Install these with:
 
-```sudo pacman -S gcc make dkms```
+```
+sudo pacman -S gcc make dkms
+```
 
 3. Install v4l2loopback-dkms:
 
 Arch Linux includes the v4l2loopback-dkms package in the official repositories. Install it using:
 
-```sudo pacman -S v4l2loopback-dkms```
+```
+sudo pacman -S v4l2loopback-dkms
+```
 
 4. Build the module:
 
 The dkms package automates building modules for different kernel versions. To build the module, run:
 
-```sudo dkms autoinstall```
+```
+sudo dkms autoinstall
+```
 
 5. (Optional) Manually load the module:
 
 After building, the module might not be loaded automatically. You can manually load it with:
 
-```sudo modprobe v4l2loopback```
+```
+sudo modprobe v4l2loopback
+```
 
 6. Verification:
 
 You can verify if the module is loaded by running:
 
-```lsmod | grep v4l2loopback```
+```
+lsmod | grep v4l2loopback
+```
 
 If the command outputs a line containing "v4l2loopback", the module is loaded successfully.
