@@ -5,7 +5,9 @@ Here's how to install v4l2loopback on Arch Linux:
 
 1. Update package lists:
 
-```sudo pacman -Syu```
+```
+sudo pacman -Syu
+```
 
 2. Install build dependencies:
 
